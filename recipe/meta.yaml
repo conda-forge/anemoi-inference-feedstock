@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/anemoi-inference/anemoi_inference-{{ version }}.tar.gz
-  sha256: 68c2f169eab2402572b8209c8dc53003c31ef844c2231ca299c3d86ae6ff82b6
+  sha256: a9b50b6ca72e80db6e7c0650af282dbfb0d168b3dee2f84d6cf5531e0881ec9b
 
 build:
   entry_points:
