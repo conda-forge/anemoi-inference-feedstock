@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/anemoi-inference/anemoi_inference-{{ version }}.tar.gz
-  sha256: a9b50b6ca72e80db6e7c0650af282dbfb0d168b3dee2f84d6cf5531e0881ec9b
+  sha256: 436316b36a116cae2fb0a5177c5c95fd52363fcc66a7102fc60e7debe1b0ba05
 
 build:
   entry_points:
     - anemoi-inference = anemoi.inference.__main__:main
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
-  number: 1
+  number: 0
 
 requirements:
   host:
